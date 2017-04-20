@@ -1,5 +1,5 @@
 package linuxacademy.git;
 
-gef gitCommit(gitPath) {
+def gitCommit(gitPath) {
     return "/bin/git --git-dir=${gitPath} rev-parse HEAD".execute().text
 }
